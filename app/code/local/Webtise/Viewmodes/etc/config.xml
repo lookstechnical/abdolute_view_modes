@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Webtise_Viewmodes>
+            <version>0.1.0</version>
+        </Webtise_Viewmodes>
+    </modules>
+    <global>
+        <models>
+            <webtise_viewmodes>
+                <class>Webtise_Viewmodes_Model</class>
+                <resourceModel>webtise_viewmodes_resource</resourceModel>
+            </webtise_viewmodes>
+            <webtise_viewmodes_resource>
+                <class>Webtise_Viewmodes_Model_Resource</class>
+            </webtise_viewmodes_resource>
+        </models>
+        <blocks>
+            <webtise_viewmodes>
+                <class>Webtise_Viewmodes_Block</class>
+            </webtise_viewmodes>
+
+            <catalog>
+                <rewrite>
+                    <product_list_toolbar>Webtise_Viewmodes_Block_Catalog_Product_List_Toolbar</product_list_toolbar>
+                </rewrite>
+            </catalog>
+        </blocks>
+        <helpers>
+            <webtise_viewmodes>
+                <class>Webtise_Viewmodes_Helper</class>
+            </webtise_viewmodes>
+        </helpers>
+
+        <events>
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <webtise_viewmodes>
+                        <type>model</type>
+                        <class>webtise_viewmodes/observer</class>
+                        <method>coreBlockAbstractToHtmlAfter</method>
+                    </webtise_viewmodes>
+                </observers>
+            </core_block_abstract_to_html_after>
+        </events>
+    </global>
+</config>

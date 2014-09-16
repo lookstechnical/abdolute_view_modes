@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <catalog>
+            <groups>
+                <frontend>
+                    <fields>
+                        <list_mode>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>webtise_viewmodes/adminhtml_system_config_source_catalog_listMode</source_model>
+                        </list_mode>
+
+                        <grid2_per_page_values translate="label comment">
+                            <label>Products per Page on Grid2 Allowed Values</label>
+                            <comment>Comma-separated.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-per-page-value-list</validate>
+                            <!--<source_model>adminhtml/system_config_source_catalog_gridPerPage</source_model>-->
+                            <sort_order>5.4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </grid2_per_page_values>
+                        <grid2_per_page translate="label comment">
+                            <label>Products per Page on Grid2 Default Value</label>
+                            <comment>Must be in the allowed values list.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-per-page-value</validate>
+                            <!--<source_model>adminhtml/system_config_source_catalog_gridPerPage</source_model>-->
+                            <sort_order>5.3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </grid2_per_page>
+
+                        <grid3_per_page_values translate="label comment">
+                            <label>Products per Page on Grid3 Allowed Values</label>
+                            <comment>Comma-separated.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-per-page-value-list</validate>
+                            <!--<source_model>adminhtml/system_config_source_catalog_gridPerPage</source_model>-->
+                            <sort_order>5.6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </grid3_per_page_values>
+                        <grid3_per_page translate="label comment">
+                            <label>Products per Page on Grid3 Default Value</label>
+                            <comment>Must be in the allowed values list.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-per-page-value</validate>
+                            <!--<source_model>adminhtml/system_config_source_catalog_gridPerPage</source_model>-->
+                            <sort_order>5.5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </grid3_per_page>
+
+                        <grid4_per_page_values translate="label comment">
+                            <label>Products per Page on Grid4 Allowed Values</label>
+                            <comment>Comma-separated.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-per-page-value-list</validate>
+                            <!--<source_model>adminhtml/system_config_source_catalog_gridPerPage</source_model>-->
+                            <sort_order>5.7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </grid4_per_page_values>
+                        <grid4_per_page translate="label comment">
+                            <label>Products per Page on Grid4 Default Value</label>
+                            <comment>Must be in the allowed values list.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-per-page-value</validate>
+                            <!--<source_model>adminhtml/system_config_source_catalog_gridPerPage</source_model>-->
+                            <sort_order>5.8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </grid4_per_page>
+                    </fields>
+                </frontend>
+            </groups>
+        </catalog>
+    </sections>
+</config>
