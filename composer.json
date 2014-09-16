@@ -1,0 +1,13 @@
+{
+  "name": "webtise/view_modes",
+  "type": "magento-module",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "extra":{
+        "map":[
+            ["app/code/local/Webtise/Viewmodes", "app/code/local/Webtise/Viewmodes"],
+            ["app/etc/modules/Webtise_Viewmodes.xml", "app/etc/modules/Webtise_Viewmodes.xml"],            
+        ]
+   }
+}
