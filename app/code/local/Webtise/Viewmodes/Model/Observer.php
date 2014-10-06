@@ -16,10 +16,10 @@
 
         $html = $transport->getHtml();
 
-        $new_output = Mage::getSingleton('core/layout')->createBlock('adminhtml/template')
+        /*$new_output = Mage::getSingleton('core/layout')->createBlock('adminhtml/template')
             ->setTemplate('webtise/config/js.phtml')->toHtml();
 
-        $html = $html.$new_output;
+        $html = $html.$new_output;*/
 
         $html = str_replace('perPageSelect = new perPageModel();','',$html);
 
