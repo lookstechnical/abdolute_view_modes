@@ -49,8 +49,8 @@
             return $mode;
         }
         $modes = array_keys($this->_availableMode);
-       // $defaultMode = current($modes);
-        $defaultMode = 'grid3';
+        $defaultMode = current($modes);
+        var_dump($defaultMode);
         $mode = $this->getRequest()->getParam($this->getModeVarName());
         if ($mode) {
             if ($mode == $defaultMode) {
