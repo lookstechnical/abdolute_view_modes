@@ -49,8 +49,9 @@
             return $mode;
         }
         $modes = array_keys($this->_availableMode);
-        $defaultMode = current($modes);
-        $defaultMode = 'grid3';
+       // $defaultMode = current($modes);
+        $defaultMode = Mage::getStoreConfig('catalog/frontend/default_grid');
+
         $mode = $this->getRequest()->getParam($this->getModeVarName());
         if ($mode) {
             if ($mode == $defaultMode) {
