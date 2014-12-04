@@ -36,6 +36,38 @@
             return $this->_defaultAvailableLimit;
         }
     }
+    
+    /**
+     * Retrieve current View mode
+     *
+     * @return string
+     */
+    public function getCurrentMode()
+    {
+        $mode = $this->_getData('_current_grid_mode');
+        if ($mode) {
+            return $mode;
+        }
+        $modes = array_keys($this->_availableMode);
+       // $defaultMode = current($modes);
+        $defaultMode = 'grid3';
+        $mode = $this->getRequest()->getParam($this->getModeVarName());
+        if ($mode) {
+            if ($mode == $defaultMode) {
+                Mage::getSingleton('catalog/session')->unsDisplayMode();
+            } else {
+                $this->_memorizeParam('display_mode', $mode);
+            }
+        } else {
+            $mode = Mage::getSingleton('catalog/session')->getDisplayMode();
+        }
+
+        if (!$mode || !isset($this->_availableMode[$mode])) {
+            $mode = $defaultMode;
+        }
+        $this->setData('_current_grid_mode', $mode);
+        return $mode;
+    }
 
     /**
      * Retrieve available limits for specified view mode
